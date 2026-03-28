@@ -7048,7 +7048,7 @@ span.qa {
     }
 }
 
-.smooth-carousel {
+/* .smooth-carousel {
     overflow: hidden;
     width: 100%;
 }
@@ -7058,6 +7058,37 @@ span.qa {
     gap: 30px;
     width: max-content;
     will-change: transform;
+} */
+
+/* Container same as before */
+.smooth-carousel {
+    width: 100%;
+}
+
+/* Owl overrides to match your flex spacing */
+.doctor-carousel .owl-stage {
+    display: flex;
+}
+
+.doctor-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Keep your card UI same */
+.team-box {
+    text-align: center;
+    display: block;
+}
+
+.team-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* spacing between items */
+.owl-carousel .owl-item {
+    padding: 0 15px;
 }
 
 .drleft {
@@ -7146,3 +7177,6 @@ span.qa {
     transform: scale(1.1);
     background-color: #0056b3;
 }
+
+
+/* ------------- Banner carousel ----------------- */

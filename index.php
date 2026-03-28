@@ -1,4 +1,4 @@
- <!DOCTYPE html
+<!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -299,7 +299,7 @@
 
   <div class="banner">
 
-    <ul class="rslides banner-img" id="slider3">
+    <ul class="rslides banner-img banner-owl owl-carousel" id="slider3">
 
       <li> <img loading="lazy" src="images/banner/best-cornea-surgeon-in-mumbai.jpg" alt="Best Cornea Surgeon In Mumbai"
           title="Best Cornea Surgeon In Mumbai">
@@ -615,13 +615,12 @@
   </div>
   <!-- ============================ Our doctors ================================== -->
 
-  <div class="treatment-area">
+  <!-- <div class="treatment-area">
     <div class="lay-width">
       <h2>Our Doctors</h2>
 
       <div class="smooth-carousel">
         <div class="smooth-track">
-          <!-- ORIGINAL ITEMS ONLY (NO DUPLICATES IN HTML) -->
           <a href="dr-amit-pathak.html" class="team-box">
             <img loading="lazy" src="images/doctor-images/1.png" alt="">
             <span class="team-name">Dr. Amit H. Pathak</span>
@@ -650,9 +649,46 @@
       </div>
 
     </div>
+  </div> -->
+
+  <div class="treatment-area">
+    <div class="lay-width">
+      <h2>Our Doctors</h2>
+
+      <div class="smooth-carousel">
+
+        <!-- ADD owl-carousel CLASS -->
+        <div class="owl-carousel doctor-carousel">
+
+          <a href="dr-amit-pathak.html" class="team-box">
+            <img src="images/doctor-images/1.png" alt="">
+            <span class="team-name">Dr. Amit H. Pathak</span>
+          </a>
+
+          <a href="dr-jayesh-vira.html" class="team-box">
+            <img src="images/doctor-images/2.png" alt="">
+            <span class="team-name">Dr. Jayesh Vira</span>
+          </a>
+
+          <a href="dr-prateek-thanvi.html" class="team-box">
+            <img src="images/doctor-images/3.png" alt="">
+            <span class="team-name">Dr. Prateek Thanvi</span>
+          </a>
+
+          <a href="dr-tanvi-jain.html" class="team-box">
+            <img src="images/doctor-images/4.png" alt="">
+            <span class="team-name">Dr. Tanvi Jain</span>
+          </a>
+
+          <a href="dr-pooja-keswani.html" class="team-box">
+            <img src="images/doctor-images/5.png" alt="">
+            <span class="team-name">Dr. Pooja Keswani</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
   </div>
-
-
 
 
 
@@ -1155,7 +1191,8 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
 
         <div class="colf">
           <h3>Mumbai Eye Care<span>Eye Clinic in Ghatkopar West</span></h3>
-          <p>86 Central by Crystal Group, 309, 3rd floor, Andheri Ghatkopar Link Rd, near Shreyas Signal, off Lal Bahadur Shastri Marg, Gangawadi, Ghatkopar West, Mumbai, Maharashtra 400086
+          <p>86 Central by Crystal Group, 309, 3rd floor, Andheri Ghatkopar Link Rd, near Shreyas Signal, off Lal
+            Bahadur Shastri Marg, Gangawadi, Ghatkopar West, Mumbai, Maharashtra 400086
           </p>
           <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-mobile" aria-hidden="true"></i> <a
               href="tel:+91-8450938157">+91-8450938157</a>, <a href="tel:+91-7710055934">+91-7710055934</a>
@@ -1342,6 +1379,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/new-carousel.js"></script>
   <script src="js/youtube.js" defer></script>
 
   <script>
@@ -1391,18 +1429,18 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
 
     <?php
 
-global $wp_query;
+    global $wp_query;
 
-$args = array('post_type' => 'post', 'posts_per_page' => 4);
+    $args = array('post_type' => 'post', 'posts_per_page' => 4);
 
-query_posts($args);
-$i = 1;
-while (have_posts()):
-  the_post();
+    query_posts($args);
+    $i = 1;
+    while (have_posts()):
+      the_post();
 
-  if ($i == 1) {
+      if ($i == 1) {
 
-?>
+        ?>
 
     <div class="blogleft">
 
@@ -1420,11 +1458,11 @@ while (have_posts()):
 
         <?php $shortdesc = get_the_content();
 
-    $shortdesc1 = the_excerpt();
+        $shortdesc1 = the_excerpt();
 
-    $shortdesc = substr($shortdesc1, 0, 1200);
+        $shortdesc = substr($shortdesc1, 0, 1200);
 
-?>
+        ?>
 
         <p><?php echo $shortdesc; ?> <a style="display:inline-block;" href="<?php the_permalink(); ?>" class="readmore">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a> </p>
 
@@ -1439,11 +1477,11 @@ while (have_posts()):
 </section>
 
 <?php
-  }
+      }
 
-  if ($i == 2) {
+      if ($i == 2) {
 
-?>
+        ?>
 
 <div class="blog-sec">
 
@@ -1452,11 +1490,11 @@ while (have_posts()):
     <ul>
 
       <?php
-  }
+      }
 
-  if ($i > 1) {
+      if ($i > 1) {
 
-?>
+        ?>
 
       <li> <i><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img loading="lazy" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title(); ?>" /></a></i>
 
@@ -1468,32 +1506,32 @@ while (have_posts()):
 
         <?php $shortdesc = get_the_content();
 
-    $shortdesc = substr($shortdesc, 0, 180);
+        $shortdesc = substr($shortdesc, 0, 180);
 
 
-?>
+        ?>
 
         <p><?php echo $shortdesc; ?> <a href="<?php the_permalink(); ?>" class="rmore ">Read more...</a></p>
 
       </li>
 
       <?php
-  }
+      }
 
 
-?>
+      ?>
 
       <?php
 
 
 
-  $i++;
+      $i++;
 
-endwhile;
+    endwhile;
 
-wp_reset_query();
+    wp_reset_query();
 
-?>
+    ?>
 
     </ul>
 
