@@ -1,0 +1,79 @@
+/* Base menu hidden on mobile */
+#mobopen {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger button style */
+.mobnav {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Only show hamburger on mobile */
+@media (max-width: 992px) {
+    .mobnav {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: block !important;
+    }
+
+    nav ul li {
+        list-style: none;
+        border-bottom: 1px solid #eee;
+        padding: 10px 15px;
+    }
+
+    nav ul li a {
+        color: #000;
+        text-decoration: none;
+        display: block;
+    }
+
+    nav ul li ul.lavel {
+        display: none;
+        padding-left: 15px;
+    }
+
+    nav ul li.active>ul.lavel {
+        display: block;
+    }
+}
+
+/* ------------------- Next sub dropdowns ---------------------- */
+
+/* Hide all nested lists by default */
+#mobopen ul {
+    display: none;
+}
+
+/* Show when parent li is active */
+#mobopen li.active>ul {
+    display: block;
+}
+
+/* Optional caret rotation for .sub spans */
+#mobopen .sub {
+    float: right;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+#mobopen li.active>a .sub {
+    transform: rotate(90deg);
+}
