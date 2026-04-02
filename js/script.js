@@ -113,3 +113,5 @@ $(function () {
     manualControls: "#slider3-pager",
   });
 });
+
+
