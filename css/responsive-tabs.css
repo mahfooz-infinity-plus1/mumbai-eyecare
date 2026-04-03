@@ -1,0 +1,104 @@
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled, .r-tabs .r-tabs-nav .r-tabs-state-disabled {
+	opacity:.5
+}
+.r-tabs {
+	position:relative
+}
+.r-tabs .r-tabs-nav .r-tabs-tab {
+	position:relative;
+	margin-top:10px
+}
+.r-tabs-tab {
+	margin-right:.3%!important;
+	text-align:center;
+	width:25%
+}
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+	display:inline-block;
+	background:#58595b;
+	padding:16px 0;
+	width:100%;
+	text-align:center;
+	text-decoration:none;
+	font-size:22px; font-weight:600; border-radius:5px;
+	color:#fff
+}
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor, .r-tabs:hover .r-tabs-nav:hover .r-tabs-anchor:hover {
+	color:#000;
+	font-size:22px;
+	text-shadow:none;
+	background:#d7df21
+}
+.r-tabs .r-tabs-panel {
+	background-color:#fff
+}
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+	display:block; font-size:22px; font-weight:600;
+	margin-bottom:5px;
+	padding:15px 15px;
+	color:#fff;
+	background:#58595b;
+	text-decoration:none
+}
+.info, button {
+	margin-top:10px;
+	margin-right:10px;
+	padding:10px 20px;
+	line-height:100%;
+	font-size:14px;
+	cursor:pointer;
+	display:inline-block
+}
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+	background-color:#d7df21;
+	color:#000;
+	text-shadow:none
+}
+button {
+	color:#fff;
+	text-align:center;
+	text-shadow:0 1px rgba(0, 0, 0, .3);
+	vertical-align:middle;
+	font-weight:700;
+	border:0;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+.info {
+	width:300px;
+	font-family:Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	color:#00c5ad;
+	border:2px solid #00ab94;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	background-color:#fff
+}
+.r-tabs .r-tabs-nav {
+	margin:0 0 30px 0; text-align:center;
+	padding:0
+}
+.r-tabs .r-tabs-tab {
+	display:inline-block;
+	margin:0;
+	list-style:none
+}
+.r-tabs .r-tabs-panel {
+	padding:0px 0 10px;
+	display:none
+}
+.r-tabs .r-tabs-accordion-title {
+	display:none
+}
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+	display:block
+}
+@media only screen and (max-width:768px) {
+.r-tabs .r-tabs-nav {
+display:none
+}
+.r-tabs .r-tabs-accordion-title {
+display:block
+}
+}
