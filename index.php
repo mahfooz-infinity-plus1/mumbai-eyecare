@@ -297,7 +297,7 @@
 
   </div>
 
-  <div class="banner">
+  <!-- <div class="banner">
 
     <ul class="rslides banner-img banner-owl owl-carousel" id="slider3">
 
@@ -387,13 +387,60 @@
 
     </ul>
 
-    <!-- <ul id="slider3-pager">
+  </div> -->
+  <div class="ti-banner-carousel owl-carousel owl-theme">
 
-    <li><a href="javascript:void(0);">1</a></li>
+    <div class="ti-banner-item">
+      <img src="images/banner/best-cornea-surgeon-in-mumbai.jpg" alt="Best Cornea Surgeon in Mumbai">
+      <div class="banner-txt">
+        <div class="banner-txt-area">
+          <div class="banner-txt-area-txt">
+            <h2>One Of The Best Cornea Surgeon In Mumbai</h2>
+            <a href="eye-specialist-in-ghatkopar-east-cornea-specialist-in-mumbai-eye-specialist-in-ghatkopar-west-vikhroli-chembur-kurla.html"
+              class="bnr-rmore" title="Best Cornea Surgeon In Mumbai">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <li><a href="javascript:void(0);">2</a></li>
+    <div class="ti-banner-item">
+      <img src="images/banner/eye-care-ghatkopar-east.jpg" alt="Eye Care Ghatkopar East">
+      <div class="banner-txt">
+        <div class="banner-txt-area">
+          <div class="banner-txt-area-txt">
+            <h2>Complete Eye Care In Ghatkopar, Mumbai</h2>
+            <a href="eye-clinic-in-ghatkopar-eye-clinic-in-ghatkopar-east-eye-clinic-in-ghatkopar-west.html"
+              class="bnr-rmore" title="Eye Care Ghatkopar East">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </ul> -->
+    <div class="ti-banner-item">
+      <img src="images/banner/lasik-surgery-in-ghatkopar.jpg" alt="Lasik Surgery Ghatkopar">
+      <div class="banner-txt">
+        <div class="banner-txt-area">
+          <div class="banner-txt-area-txt">
+            <h2>Bladeless Femtosecond Lasik Surgery In Ghatkopar</h2>
+            <a href="lasik-eye-surgery-in-ghatkopar-lasik-surgery-in-ghatkopar-lasik-in-ghatkopar.html"
+              class="bnr-rmore" title="Lasik Surgery In Ghatkopar">More Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ti-banner-item">
+      <img src="images/banner/eye-specialist-in-ghatkopar.jpg" alt="Eye Specialist Ghatkopar">
+      <div class="banner-txt">
+        <div class="banner-txt-area">
+          <div class="banner-txt-area-txt">
+            <h1>Eye Specialist In Ghatkopar, Mumbai</h1>
+            <a href="eye-specialist-in-ghatkopar-east-cornea-specialist-in-mumbai-eye-specialist-in-ghatkopar-west-vikhroli-chembur-kurla.html"
+              class="bnr-rmore" title="Eye Specialist In Ghatkopar">More Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
@@ -1377,42 +1424,9 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
   <script src="slider/responsiveslides.min.js" defer></script>
   <script src="assets/js/main.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/new-carousel.js"></script>
   <script src="js/youtube.js" defer></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const track = document.querySelector(".smooth-track");
-      if (!track) return;
-
-      // Clone ONLY ONCE
-      const items = Array.from(track.children);
-      items.forEach(item => {
-        track.appendChild(item.cloneNode(true));
-      });
-
-      let position = 0;
-      const speed = 1; // adjust speed here
-      const halfWidth = track.scrollWidth / 2;
-
-
-      function animate() {
-        position -= speed;
-
-
-        if (Math.abs(position) >= halfWidth) {
-          position = 0;
-        }
-
-        track.style.transform = `translateX(${position}px)`;
-        requestAnimationFrame(animate);
-      }
-
-      animate();
-    });
-  </script>
 
 
 

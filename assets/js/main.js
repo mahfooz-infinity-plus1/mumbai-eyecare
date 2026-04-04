@@ -38,7 +38,7 @@
         if (
           self.contents[i].classList.contains("cd-timeline__content--hidden") &&
           self.blocks[i].getBoundingClientRect().top <=
-            window.innerHeight * self.offset
+          window.innerHeight * self.offset
         ) {
           // add bounce-in animation
           self.images[i].classList.add("cd-timeline__img--bounce-in");
@@ -114,5 +114,18 @@ $(document).ready(function () {
       $("#mobopen").slideUp(250);
       $("#menumob").removeClass("clos-nav");
     }
+  });
+});
+
+$(document).ready(function () {
+  $('.ti-banner-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    items: 1
   });
 });

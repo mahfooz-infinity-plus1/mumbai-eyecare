@@ -18,15 +18,16 @@ $(document).ready(function () {
         loop: true,
         margin: 30,
         autoplay: true,
-        autoplayTimeout: 1,        // very small timeout to avoid initial pause
-        smartSpeed: 5000,          // duration of slide transition
-        slideTransition: 'linear', // smooth linear movement
-        autoplayHoverPause: true,
+        autoplayTimeout: 0,        // Continuous movement
+        autoplaySpeed: 8000,       // Adjust for flow speed
+        smartSpeed: 8000,          // Match for constant speed
+        slideTransition: 'linear', // Required for smooth continuous movement
+        autoplayHoverPause: false, // Prevents jerky stops on hover
         dots: false,
         nav: false,
         responsive: {
             0: { items: 1 },
-            600: { items: 3 },
+            600: { items: 2 },
             1000: { items: 3 }
         },
     });

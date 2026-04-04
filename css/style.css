@@ -7066,13 +7066,21 @@ span.qa {
 }
 
 /* Owl overrides to match your flex spacing */
+/* Owl overrides for smooth continuous flow and shaking fix */
 .doctor-carousel .owl-stage {
     display: flex;
+    transition-timing-function: linear !important;
+    /* Force linear for marquee */
+    -webkit-transition-timing-function: linear !important;
 }
 
 .doctor-carousel .owl-item {
     display: flex;
     justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 /* Keep your card UI same */
@@ -7089,6 +7097,10 @@ span.qa {
 /* spacing between items */
 .owl-carousel .owl-item {
     padding: 0 15px;
+}
+
+.ti-banner-carousel .owl-item {
+    padding: 0 !important;
 }
 
 .drleft {
@@ -7180,3 +7192,174 @@ span.qa {
 
 
 /* ------------- Banner carousel ----------------- */
+.ti-banner-carousel {
+    width: 100%;
+    display: block;
+    overflow: hidden !important;
+}
+
+.ti-banner-carousel .ti-banner-item {
+    width: 100%;
+    height: 450px;
+    /* Reduced from 500px */
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
+}
+
+.ti-banner-carousel .ti-banner-item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Responsive height for different screens to reduce zoom/crop */
+@media (max-width: 1200px) {
+    .ti-banner-carousel .ti-banner-item {
+        height: 400px;
+        /* Reduced from 450px */
+    }
+}
+
+@media (max-width: 768px) {
+    .ti-banner-carousel .ti-banner-item {
+        height: 300px;
+        /* Reduced from 350px */
+    }
+}
+
+@media (max-width: 480px) {
+    .ti-banner-carousel .ti-banner-item {
+        height: 200px;
+        /* Reduced from 250px */
+    }
+}
+
+.ti-banner-carousel .ti-banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transform: scale(1.01);
+    /* Slightly larger scale to hide sub-pixel gaps */
+}
+
+
+/* Fix for loop alignment issues (prevents slivers on left/right) */
+.ti-banner-carousel {
+    overflow: hidden !important;
+}
+
+.ti-banner-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* ------------- New Responsive Banner Overlays ----------------- */
+.ti-banner-carousel .banner-txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.ti-banner-carousel .banner-txt-area {
+    width: 100%;
+    height: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ti-banner-carousel .banner-txt-area-txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF;
+    padding: 25px 15px;
+    max-width: 510px;
+    /* Matching original exactly */
+    width: 100%;
+    text-align: center;
+    pointer-events: auto;
+}
+
+.ti-banner-carousel .banner-txt-area-txt h1,
+.ti-banner-carousel .banner-txt-area-txt h2 {
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 26px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ti-banner-carousel .bnr-rmore {
+    display: inline-block !important;
+    /* Crucial for auto-width */
+    width: auto !important;
+    /* Force auto-width */
+    padding: 10px 35px;
+    font-size: 16px;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    font-weight: 500;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.ti-banner-carousel .bnr-rmore:hover {
+    color: #fff !important;
+    background: #007882 !important;
+    border: 1px solid #007882 !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 991px) {
+    .ti-banner-carousel .banner-txt-area-txt {
+        max-width: 400px;
+        padding: 20px 15px;
+    }
+
+    .ti-banner-carousel .banner-txt-area-txt h1,
+    .ti-banner-carousel .banner-txt-area-txt h2 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ti-banner-carousel .banner-txt-area-txt {
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .ti-banner-carousel .banner-txt-area-txt h1,
+    .ti-banner-carousel .banner-txt-area-txt h2 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .ti-banner-carousel .banner-txt-area-txt h1,
+    .ti-banner-carousel .banner-txt-area-txt h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .ti-banner-carousel .bnr-rmore {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+}
