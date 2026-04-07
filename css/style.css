@@ -7107,55 +7107,50 @@ span.qa {
     position: relative;
     width: 45%;
     float: left;
-    min-height: 350px;
 }
 
 .drleft img {
-    position: absolute;
+    position: relative;
     border-radius: 6px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 /* First image (background / bigger) */
 .drleft img:first-child {
-    width: 264px;
-    height: 382px;
-    top: 0;
-    left: 0;
     z-index: 1;
 }
 
-/* Second image (front / smaller) */
-.drleft img:last-child {
-    width: 195px;
-    height: 224px;
-    top: 211px;
-    bottom: 0;
-    /* right: 46px; */
+/* Second image (front / smaller) - Only applies if there is a second image */
+.drleft img:nth-child(2) {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
     z-index: 2;
-    left: 175px;
-    /* border: 6px solid #fff; */
+    border: 6px solid #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .drleft {
         width: 100%;
-        min-height: 300px;
         margin-bottom: 20px;
+        text-align: center;
     }
 
-    .drleft img:first-child {
-        width: 214px;
-        height: 282px;
-        left: 41px;
+    .drleft img {
+        max-width: 320px;
+        margin: 0 auto;
     }
 
-    .drleft img:last-child {
-        width: 132px;
-        height: 143px;
-        top: 170px;
-        right: 60px;
+    .drleft img:nth-child(2) {
+        width: 50%;
+        height: auto;
+        bottom: -10px;
+        right: 10px;
     }
 }
 
