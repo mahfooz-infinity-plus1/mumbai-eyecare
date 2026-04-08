@@ -572,7 +572,7 @@
 
     <div class="lay-width1 clearfix" itemscope itemtype="http://schema.org/Physician">
 
-      <div class="drleft"> <img loading="lazy" itemprop="image" src="images/eye-specialist-in-ghatkopar.jpg"
+      <div class="drleft"> <img loading="lazy" itemprop="image" src="images/doctor-images/dr-jatin-ashar.jpeg"
           alt="Dr. Jatin Ashar - Eye Specialist In Ghatkopar" title="Dr. Jatin Ashar - Eye Specialist In Ghatkopar" />
       </div>
 
@@ -588,7 +588,8 @@
 
           Cataract, Cornea and Refractive surgery specialist</h4>
 
-        <p>Soft-spoken, compassionate and an intellectual man, Dr. Ashar trained at the prestigious ‘All India Institute
+        <p class="">Soft-spoken, compassionate and an intellectual man, Dr. Ashar trained at the prestigious ‘All India
+          Institute
           of Medical Sciences’, New Delhi; one of Asia’s best! After his post-graduation, he completed his fellowship in
           Cornea and Anterior Segment from the world renowned L. V. Prasad Eye Institute. Later on, he was appointed as
           the main cornea consultant at the ‘New Tertiary Care Center’ at the same institute.</p>
@@ -600,7 +601,7 @@
 
         <meta itemprop="telephone" content="+91 8451045934, +91 8451045935">
 
-        <p style="padding-top:20px; padding-bottom:20px;">
+        <p style="padding-bottom:20px;">
           We wanted to share this with gratitude.<br>
           Mumbai Eye Care – Cornea & LASIK Centre has been independently listed among the Best Ophthalmologists in
           Mumbai for the 9th consecutive year by ThreeBestRated.<br>

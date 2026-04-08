@@ -121,7 +121,7 @@ $(document).ready(function () {
   $('.ti-banner-carousel').owlCarousel({
     loop: true,
     margin: 0,
-    nav: false,
+    nav: false, n
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
