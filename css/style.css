@@ -7358,3 +7358,71 @@ span.qa {
         font-size: 14px;
     }
 }
+
+/* --- Modern Doctor Cards (Bootstrap Based) --- */
+.featured-doctors-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.featured-doctors-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #0e0416;
+}
+
+.featured-doctors-section p.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+.doctor-card-alt {
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+    display: block;
+    text-decoration: none !important;
+}
+
+.doctor-card-alt:hover {
+    transform: translateY(-8px);
+}
+
+.doctor-card-alt .img-wrapper {
+    overflow: hidden;
+    border-radius: 15px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+.doctor-card-alt img {
+    width: 100% !important;
+    height: 385px !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+    display: block !important;
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.doctor-card-alt:hover img {
+    transform: scale(1.08);
+}
+
+.doctor-card-alt h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    color: #007882 !important;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    margin-top: 0 !important;
+}
+
+.doctor-card-alt p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #6c757d !important;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}

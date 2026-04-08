@@ -718,7 +718,7 @@
           </a>
 
           <a href="dr-prateek-thanvi.html" class="team-box">
-            <img src="images/doctor-images/3.png" alt="">
+            <img src="images/doctor-images/dr-prateek-thanvi.png" alt="">
             <span class="team-name">Dr. Prateek Thanvi</span>
           </a>
 
@@ -730,6 +730,10 @@
           <a href="dr-pooja-keswani.html" class="team-box">
             <img src="images/doctor-images/5.png" alt="">
             <span class="team-name">Dr. Pooja Keswani</span>
+          </a>
+          <a href="dr-avilasha-mohapatra.html" class="team-box">
+            <img src="images/doctor-images/dr-avilasha-mohapatra.png" alt="">
+            <span class="team-name">Dr. Avilasha Mohapatra</span>
           </a>
 
         </div>
