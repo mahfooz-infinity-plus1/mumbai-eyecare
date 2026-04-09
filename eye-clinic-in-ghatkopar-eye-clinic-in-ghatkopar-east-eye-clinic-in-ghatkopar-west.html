@@ -26,7 +26,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css?v=3.0" rel="stylesheet" type="text/css">
 
   <!-- <script src="js/jquery-latest.min.js" type="text/javascript"></script>
 
@@ -336,216 +336,141 @@
 
   </div>
 
-  <div class="map-form lay-width">
-    <div id="horizontalTab">
-
-      <ul>
-
-        <li><a href="#tab-1"><i class="fa fa-map-marker" aria-hidden="true"></i> Ghatkopar East</a></li>
-
-        <li><a href="#tab-2"><i class="fa fa-map-marker" aria-hidden="true"></i> Ghatkopar West</a></li>
-
-        <li><a href="#tab-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Powai</a></li>
-
-      </ul>
-
-
-
-      <div class="form-area">
-
-        <div class="contact-p" style="margin-bottom:0px;">
-
-          <h4 style="text-align:center; font-size:30px; margin-bottom:20px; color:#FFFFFF;">Book an Appointment</h4>
-
-          <div class="contact-p-area clearfix">
-
-            <form name="contact" id="contact" method="post" action="mail.php" enctype="multipart/form-data">
-
-              <div class="cform">
-
-                <div class="row">
-
-                  <input type="text" name="name" required placeholder="Name*">
-
-                </div>
-
-                <div class="row">
-
-                  <input type="text" name="email" required placeholder="Email*">
-
-                </div>
-
-                <div class="row">
-
-                  <input type="text" name="phone" required placeholder="Phone Number*">
-
-                </div>
-
-                <div class="row">
-
-                  <textarea name="mess" placeholder="Your Query*"></textarea>
-
-                </div>
-
-                <div class="row submit">
-
-                  <input type="submit" value="Submit">
-
-                </div>
-
-              </div>
-
-            </form>
-
-          </div>
-
+  <div class="contact-grid-section">
+    <div class="lay-width contact-flex">
+      <!-- Left Column: Our Centers -->
+      <div class="centers-column">
+        <div class="centers-header">
+          <h2>Our Centers</h2>
+          <p>Find specialized care at a location nearest to you. Our facilities integrate advanced diagnostics with
+            compassionate care.</p>
         </div>
-        <div class="clearfix"></div>
+
+        <!-- Clinic Card 1: Ghatkopar East -->
+        <div class="clinic-card">
+          <div class="clinic-map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15082.993839387935!2d72.905408!3d19.074794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e4e6f463adaebc3!2sMumbai%20Eye%20Care%20-%20Eye%20Clinic%20%26%20Eye%20Hospital!5e0!3m2!1sen!2sin!4v1604466142731!5m2!1sen!2sin"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+            <a href="https://maps.app.goo.gl/y9Ao6K9i47cKSUZCA" target="_blank" class="open-maps-btn"><i
+                class="fa fa-map-marker"></i> OPEN IN MAPS</a>
+          </div>
+          <div class="clinic-details">
+            <div class="clinic-title-row">
+              <h3>Mumbai Eye Care <span>Ghatkopar East</span></h3>
+            </div>
+            <div class="clinic-info-list">
+              <p class="clinic-addr"><i class="fa fa-location-arrow"></i> 101/102, Sai Vaibhav CHS, Nr. Vikrant Circle,
+                Ghatkopar (East), Mumbai-400077</p>
+              <p class="clinic-phone"><i class="fa fa-phone"></i> <a href="tel:+918451045934">+91 8451045934</a> / <a
+                  href="tel:+918451045935">8451045935</a></p>
+              <p class="clinic-email"><i class="fa fa-envelope"></i> <a
+                  href="mailto:mumbaieyecarecornealasik@gmail.com">mumbaieyecarecornealasik@gmail.com</a></p>
+            </div>
+            <div class="operating-hours">
+              <div class="hours-label">OPERATING HOURS</div>
+              <div class="hours-val"><span>Mon - Sat</span> <span>09:30 AM - 07:00 PM</span></div>
+            </div>
+            <a href="https://maps.app.goo.gl/y9Ao6K9i47cKSUZCA" target="_blank" class="select-clinic-btn">Get Directions
+              <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Clinic Card 2: Ghatkopar West -->
+        <div class="clinic-card">
+          <div class="clinic-map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15081.260378609766!2d72.912231!3d19.093828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb6c6bc88d758695!2sMumbai%20Eye%20Care%20-%20Ghatkopar%20(W)%20Branch!5e0!3m2!1sen!2sin!4v1604466063033!5m2!1sen!2sin"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+            <a href="https://maps.app.goo.gl/nqrZFnuYAMHheYe88" target="_blank" class="open-maps-btn"><i
+                class="fa fa-map-marker"></i> OPEN IN MAPS</a>
+          </div>
+          <div class="clinic-details">
+            <div class="clinic-title-row">
+              <h3>Mumbai Eye Care <span>Ghatkopar West</span></h3>
+            </div>
+            <div class="clinic-info-list">
+              <p class="clinic-addr"><i class="fa fa-location-arrow"></i> 86 Central by Crystal Group, 309, 3rd floor,
+                Andheri Ghatkopar Link Rd, Ghatkopar West, Mumbai-400086</p>
+              <p class="clinic-phone"><i class="fa fa-phone"></i> <a href="tel:+918450938157">8450938157</a> / <a
+                  href="tel:+917710055934">7710055934</a></p>
+              <p class="clinic-email"><i class="fa fa-envelope"></i> <a
+                  href="mailto:appointments.mecwest@gmail.com">appointments.mecwest@gmail.com</a></p>
+            </div>
+            <div class="operating-hours">
+              <div class="hours-label">OPERATING HOURS</div>
+              <div class="hours-val"><span>Mon - Sat</span> <span>09:30 AM - 07:00 PM</span></div>
+            </div>
+            <a href="https://maps.app.goo.gl/nqrZFnuYAMHheYe88" target="_blank" class="select-clinic-btn">Get Directions
+              <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Clinic Card 3: Powai -->
+        <div class="clinic-card">
+          <div class="clinic-map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30157.467186823927!2d72.8851353695877!3d19.121540303890075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7e4e7ff10bd%3A0xae3197ff71235628!2sMumbai%2C%20Maharashtra%20400076!5e0!3m2!1sen!2sin!4v1723014884161!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://maps.app.goo.gl/iHx56gnv14VEjUxVA" target="_blank" class="open-maps-btn"><i
+                class="fa fa-map-marker"></i> OPEN IN MAPS</a>
+          </div>
+          <div class="clinic-details">
+            <div class="clinic-title-row">
+              <h3>Mumbai Eye Care <span>Powai Branch</span></h3>
+            </div>
+            <div class="clinic-info-list">
+              <p class="clinic-addr"><i class="fa fa-location-arrow"></i> A-104, Delphi Orchard Avenue, Hiranandani
+                Garden, Powai, Mumbai-400076</p>
+              <p class="clinic-phone"><i class="fa fa-phone"></i> <a href="tel:+918451802062">+91 8451802062</a></p>
+              <p class="clinic-email"><i class="fa fa-envelope"></i> <a
+                  href="mailto:mecpl.powai@gmail.com">mecpl.powai@gmail.com</a></p>
+            </div>
+            <div class="operating-hours">
+              <div class="hours-label">OPERATING HOURS</div>
+              <div class="hours-val"><span>Mon - Sat</span> <span>09:30 AM - 07:00 PM</span></div>
+            </div>
+            <a href="https://maps.app.goo.gl/iHx56gnv14VEjUxVA" target="_blank" class="select-clinic-btn">Get Directions
+              <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
 
-
-
-      <div class="map-area">
-
-        <div class="clearfix map-d">
-
-        </div>
-        <div id="tab-1">
-
-          <div class="map-d-row">
-
-            <div class="map-d-map">
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15082.993839387935!2d72.905408!3d19.074794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e4e6f463adaebc3!2sMumbai%20Eye%20Care%20-%20Eye%20Clinic%20%26%20Eye%20Hospital!5e0!3m2!1sen!2sin!4v1604466142731!5m2!1sen!2sin"
-                width="100%" height="418" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-
-            </div>
-
-            <div class="map-d-d">
-
-              <div class="cadrs">
-
-                <h4>Mumbai Eye Care <span> Eye Clinic in Ghatkopar East</span></h4>
-
-                <p class="location">101/102, Sai Vaibhav CHS, Nr. Vikrant Circle, Ghatkopar (East), Mumbai-400077</p>
-
-                <p class="fpho"><strong>Call: </strong> +91 8451045934 / 8451045935 / 022-25066699</p>
-
-                <p class="email-c"><strong>Email: </strong> <a
-                    href="mailto:mumbaieyecarecornealasik@gmail.com">mumbaieyecarecornealasik@gmail.com</a></p>
-
-                <p class="fptime" style="margin-bottom:25px;"><strong>Working Hours: </strong> 9am to 9pm</p>
-
-                <a rel="nofollow" target="_blank" title="Get Directions"
-                  href="https://maps.app.goo.gl/y9Ao6K9i47cKSUZCA" class="btn1 btn02">Get Directions</a>
-
-              </div>
-
-            </div>
-
+      <!-- Right Column: Appointment Form -->
+      <div class="form-column">
+        <div class="appointment-form-card" id="appointment-form">
+          <div class="form-header">
+            <h3>Book Appointment</h3>
           </div>
-        </div>
-
-        <div id="tab-2">
-
-          <div class="map-d-row">
-
-            <div class="map-d-map">
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15081.260378609766!2d72.912231!3d19.093828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb6c6bc88d758695!2sMumbai%20Eye%20Care%20-%20Ghatkopar%20(W)%20Branch!5e0!3m2!1sen!2sin!4v1604466063033!5m2!1sen!2sin"
-                width="100%" height="418" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-
-            </div>
-
-            <div class="map-d-d" style="background:#f0f2c3;">
-
-              <div class="cadrs">
-
-                <h4>Mumbai Eye Care<span>Eye Clinic in Ghatkopar West</span></h4>
-
-                <p class="location">86 Central by Crystal Group, 309, 3rd floor, Andheri Ghatkopar Link Rd, near Shreyas
-                  Signal, off Lal Bahadur Shastri Marg, Gangawadi, Ghatkopar West, Mumbai, Maharashtra 400086</p>
-
-                <p class="fpho"><strong>Call: </strong> <a href="tel:+91-8450938157">+91-8450938157</a>, <a
-                    href="tel:+91-7710055934">+91-7710055934</a></p>
-
-                <p class="email-c"><strong>Email: </strong> <a
-                    href="mailto:appointments.mecwest@gmail.com">appointments.mecwest@gmail.com</a></p>
-
-                <p class="fptime" style="color:#000; margin-bottom:25px;"><strong>Working Hours: </strong> 10am to 8pm
-                </p>
-
-                <a rel="nofollow" target="_blank" title="Get Directions"
-                  href="https://maps.app.goo.gl/nqrZFnuYAMHheYe88" class="btn1 btn02">Get Directions</a>
-
+          <form name="contact" id="contact" method="post" action="mail.php" enctype="multipart/form-data">
+            <div class="form-body">
+              <div class="form-group">
+                <label>FULL NAME</label>
+                <input type="text" name="name" required placeholder="Enter your name">
               </div>
-
-            </div>
-
-          </div>
-
-          <div class="clearfix"></div>
-
-
-
-
-
-        </div>
-
-
-
-
-
-        <div id="tab-3">
-
-          <div class="map-d-row">
-
-            <div class="map-d-map">
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30157.467186823927!2d72.8851353695877!3d19.121540303890075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7e4e7ff10bd%3A0xae3197ff71235628!2sMumbai%2C%20Maharashtra%20400076!5e0!3m2!1sen!2sin!4v1723014884161!5m2!1sen!2sin"
-                width="100%" height="418" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-            <div class="map-d-d" style="background:#e3e9ea; padding-bottom:48px;">
-
-              <div class="cadrs">
-
-                <h4>Mumbai Eye Care<span>Eye Clinic in Powai</span></h4>
-
-                <p class="location">A-104, Delphi Orchard Avenue, Hiranandani Garden, Powai, Mumbai-400076</p>
-
-                <p class="fpho"><strong>Call: </strong> +91-8451802062</p>
-
-                <p class="email-c"><strong>Email: </strong> <a
-                    href="mailto:mecpl.powai@gmail.com">mecpl.powai@gmail.com</a></p>
-
-                <p class="fptime" style="color:#000; margin-bottom:35px;"><strong>Working Hours: </strong> 10am to 7pm
-                </p>
-
-                <a rel="nofollow" target="_blank" title="Get Directions" href="#" class="btn1 btn02">Get Directions</a>
-
+              <div class="form-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" name="email" required placeholder="Enter your email">
               </div>
-
+              <div class="form-group">
+                <label>PHONE NUMBER</label>
+                <input type="text" name="phone" required placeholder="Enter phone number">
+              </div>
+              <div class="form-group">
+                <label>YOUR QUERY</label>
+                <textarea name="mess" placeholder="How can we help you?"></textarea>
+              </div>
+              <button type="submit" class="confirm-btn">Confirm Appointment</button>
             </div>
-
-          </div>
+          </form>
         </div>
-
-
-
       </div>
-
-
-
     </div>
-    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
 
   </div>
 
@@ -636,7 +561,7 @@
               href="tel:022-25066699">022-25066699</a> <span>(For Appointment)</span></p>
 
           <p class="fpho" style="margin-bottom:8px;"><i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span><strong>Working Hours:</strong> 9am to 9pm</span>
+            <span><strong>Working Hours:</strong> 9:30am to 7pm</span>
           </p>
 
           <p class="fpho1" style="margin-bottom:0px;"><a
@@ -659,7 +584,7 @@
           </p>
 
           <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span><strong>Working Hours:</strong> 10am to 8pm</span>
+            <span><strong>Working Hours:</strong> 9:30am to 7pm</span>
           </p>
 
           <p class="fpho1" style="margin-bottom:0px;"><a
@@ -678,7 +603,7 @@
               href="tel:+91-8451802062">+91-8451802062</a> <span>(For Appointment)</span></p>
 
           <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span><strong>Working Hours:</strong> 10am to 7pm</span>
+            <span><strong>Working Hours:</strong> 9:30am to 7pm</span>
           </p>
 
           <p class="fpho1" style="margin-bottom:0px;"><a href="#" target="_blank"><i class="fa fa-location-arrow"
@@ -861,39 +786,6 @@
 
   </div>
 
-  <script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
-
-    $(document).ready(function () {
-
-      var $tabs = $('#horizontalTab');
-
-      $tabs.responsiveTabs({
-
-        rotate: false,
-
-        startCollapsed: false,
-
-        collapsible: 'accordion',
-
-        setHash: true,
-
-        activate: function (e, tab) {
-
-          $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
-
-        },
-
-        activateState: function (e, state) {
-
-        }
-
-      });
-
-    });
-
-  </script>
   <!-- <script src="assets/js/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="slider/responsiveslides.min.js" defer></script>

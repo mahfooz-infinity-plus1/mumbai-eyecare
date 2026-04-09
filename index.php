@@ -708,10 +708,10 @@
         <!-- ADD owl-carousel CLASS -->
         <div class="owl-carousel doctor-carousel">
 
-          <a href="dr-amit-pathak.html" class="team-box">
+          <!-- <a href="dr-amit-pathak.html" class="team-box">
             <img src="images/doctor-images/1.png" alt="">
             <span class="team-name">Dr. Amit H. Pathak</span>
-          </a>
+          </a> -->
 
           <a href="dr-jayesh-vira.html" class="team-box">
             <img src="images/doctor-images/2.png" alt="">
@@ -1234,7 +1234,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
               href="tel:+918451045934">+91-8451045934</a>, <a href="tel:+918451045935">8451045935</a>, <a class="pl15"
               href="tel:022-25066699">022-25066699</a> <span>(For Appointment)</span></p>
           <p class="fpho" style="margin-bottom:8px;"><i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span><strong>Working Hours:</strong> 9am to 9pm</span>
+            <span><strong>Working Hours:</strong> 9:30am to 7pm</span>
           </p>
           <p class="fpho1" style="margin-bottom:0px;"><a
               href="https://www.google.com/maps?ll=19.074794,72.905408&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=10254255748995017667"
@@ -1251,7 +1251,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
             <br /><span>(For Appointment)</span>
           </p>
           <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span><strong>Working Hours:</strong> 10am to 8pm</span>
+            <span><strong>Working Hours:</strong> 9:30am to 7pm</span>
           </p>
           <p class="fpho1" style="margin-bottom:0px;"><a
               href="https://www.google.com/maps?ll=19.093828,72.912231&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=13505287891688195733"
@@ -1263,7 +1263,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
           <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-mobile" aria-hidden="true"></i> <a
               href="tel:+91-8451802062">+91-8451802062</a> <span>(For Appointment)</span></p>
           <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span><strong>Working Hours:</strong> 10am to 7pm</span>
+            <span><strong>Working Hours:</strong> 9:30am to 7pm</span>
           </p>
           <p class="fpho1" style="margin-bottom:0px;"><a href="#" target="_blank"><i class="fa fa-location-arrow"
                 aria-hidden="true"></i> Direction</a></p>
@@ -1580,7 +1580,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
 
         <p class="fpho" style="margin-bottom:8px;"><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:+918451045934">+91-8451045934</a>, <a href="tel:+918451045935">8451045935</a>, <a class="pl15" href="tel:022-25066699">022-25066699</a> <span>(For Appointment)</span></p>
 
-        <p class="fpho" style="margin-bottom:8px;"><i class="fa fa-clock-o" aria-hidden="true"></i> <span><strong>Working Hours:</strong> 9am to 9pm</span></p>
+        <p class="fpho" style="margin-bottom:8px;"><i class="fa fa-clock-o" aria-hidden="true"></i> <span><strong>Working Hours:</strong> 9:30am to 7pm</span></p>
 
         <p class="fpho1" style="margin-bottom:0px;"><a href="https://www.google.com/maps?ll=19.074794,72.905408&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=10254255748995017667" target="_blank"><i class="fa fa-location-arrow" aria-hidden="true"></i> Direction</a></p>
 
@@ -1594,7 +1594,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
 
         <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:+91-8450938157">+91-8450938157</a>, <a href="tel:+91-7710055934">+91-7710055934</a> <br /><span>(For Appointment)</span></p>
 
-        <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i> <span><strong>Working Hours:</strong> 10am to 8pm</span></p>
+        <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i> <span><strong>Working Hours:</strong> 9:30am to 7pm</span></p>
 
         <p class="fpho1" style="margin-bottom:0px;"><a href="https://www.google.com/maps?ll=19.093828,72.912231&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=13505287891688195733" target="_blank"><i class="fa fa-location-arrow" aria-hidden="true"></i> Direction</a></p>
 
@@ -1608,7 +1608,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
 
         <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:+91-8451802062">+91-8451802062</a> <span>(For Appointment)</span></p>
 
-        <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i> <span><strong>Working Hours:</strong> 10am to 7pm</span></p>
+        <p style="margin-bottom:8px;" class="fpho"><i class="fa fa-clock-o" aria-hidden="true"></i> <span><strong>Working Hours:</strong> 9:30am to 7pm</span></p>
 
         <p class="fpho1" style="margin-bottom:0px;"><a href="#" target="_blank"><i class="fa fa-location-arrow" aria-hidden="true"></i> Direction</a></p>
 
