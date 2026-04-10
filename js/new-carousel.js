@@ -59,4 +59,56 @@ $(document).ready(function () {
         }
     })
 
+    $('.quick-links-carousel').owlCarousel({
+        loop: true,
+        items: 3,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1500,
+        dots: false,
+        nav: false,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 5,
+                nav: false
+            }
+        }
+    });
+
+    const btn = document.getElementById("scrollTopBtn");
+    const circle = document.querySelector(".progress-ring circle");
+
+    const radius = 26;
+    const circumference = 2 * Math.PI * radius;
+
+    circle.style.strokeDasharray = circumference;
+    circle.style.strokeDashoffset = circumference;
+
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = scrollTop / docHeight;
+
+        const offset = circumference - progress * circumference;
+        circle.style.strokeDashoffset = offset;
+    });
+
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
 });

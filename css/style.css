@@ -2509,7 +2509,7 @@ a.bnr-rmore:hover {
     font-size: 32px;
     line-height: 43px;
     margin-bottom: 4px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: left;
 }
 
@@ -3116,6 +3116,40 @@ a.btn03:hover {
 .bot-link-bar a:last-child {
     background: 0px;
     padding-right: 0px;
+}
+
+/* ----------- Quick links carousel-----------  */
+.quick-links-carousel .owl-stage {
+    display: flex;
+    transition-timing-function: linear !important;
+}
+
+.quick-links-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Keep links nicely aligned */
+.quick-links-carousel a {
+    text-align: center;
+    min-width: 160px;
+}
+
+.quick-links-carousel a span img {
+    width: auto;
+    height: 60px;
+    /* set your fixed height */
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.quick-links-carousel .owl-stage {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+.quick-links-carousel .owl-item {
+    transform: translate3d(0, 0, 0);
 }
 
 .copyb-display {
@@ -7156,7 +7190,8 @@ span.qa {
 
 .call-float {
     position: fixed;
-    right: 20px;
+    /* right: 20px; */
+    left: 20px;
     bottom: 40px;
     width: 60px;
     height: 60px;
@@ -7469,7 +7504,7 @@ span.qa {
     border-radius: 24px;
     overflow: hidden;
     margin-bottom: 30px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
@@ -7494,7 +7529,7 @@ span.qa {
     font-weight: 700;
     color: #007882;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .clinic-details {
@@ -7592,7 +7627,7 @@ span.qa {
     background: #fff;
     border-radius: 30px;
     padding: 40px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 
 .form-header h3 {
@@ -7622,7 +7657,7 @@ span.qa {
     letter-spacing: 0.5px;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     width: 100%;
     padding: 14px 20px;
@@ -7668,30 +7703,41 @@ span.qa {
 @media (max-width: 1024px) {
     .contact-flex {
         flex-direction: column;
-        align-items: center; /* Center the column contents */
+        align-items: center;
+        /* Center the column contents */
     }
-    .centers-column, .form-column {
+
+    .centers-column,
+    .form-column {
         flex: 0 0 100%;
         width: 100%;
-        max-width: 720px; /* Prevent over-stretching on tablets */
+        max-width: 720px;
+        /* Prevent over-stretching on tablets */
     }
+
     .form-column {
         position: static;
         margin-top: 40px;
     }
+
     .clinic-card {
         flex-direction: column;
         margin-bottom: 40px;
     }
+
     .clinic-map-container {
         flex: 0 0 240px;
     }
 }
 
 @media (max-width: 768px) {
-    .centers-column, .form-column {
-        max-width: 100%; /* Allow full width on mobile devices */
+
+    .centers-column,
+    .form-column {
+        max-width: 100%;
+        /* Allow full width on mobile devices */
     }
+
     .clinic-map-container {
         flex: 0 0 200px;
     }
@@ -7700,14 +7746,16 @@ span.qa {
 /* --- Sticky Branch Navigation Styles --- */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* Offset for sticky nav and site header */
+    scroll-padding-top: 100px;
+    /* Offset for sticky nav and site header */
 }
 
 .branch-nav-wrapper {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #f8fafb; /* Matches section background */
+    background: #f8fafb;
+    /* Matches section background */
     padding: 15px 0;
     margin-bottom: 25px;
     transition: all 0.3s ease;
@@ -7745,12 +7793,67 @@ html {
         padding-bottom: 10px;
         -webkit-overflow-scrolling: touch;
     }
+
     .branch-nav-item {
         padding: 10px 18px;
         font-size: 13px;
     }
+
     .branch-nav-wrapper {
         top: 0;
         margin-bottom: 15px;
     }
+}
+
+
+
+:root {
+    --green: #0f8b8d;
+    /* your theme green */
+    --yellow: #cddc39;
+    /* your theme yellow */
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Triangle (arrow) */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 14px solid var(--green);
+    position: absolute;
+}
+
+/* Progress ring */
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.progress-ring circle {
+    fill: none;
+    stroke: var(--yellow);
+    stroke-dasharray: 163;
+    /* circumference */
+    stroke-dashoffset: 163;
+    transition: stroke-dashoffset 0.2s linear;
 }

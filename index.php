@@ -1196,7 +1196,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
   </div>
 
 
-  <div class="bot-link-bar">
+  <!-- <div class="bot-link-bar">
     <div class="lay-width"> <span style="margin-bottom:25px;">Quick Links:</span> <a
         href="cataract-surgery-in-ghatkopar-cataract-treatment-in-ghatkopar.html"
         title="Cataract Surgery In Ghatkopar"><span><img loading="lazy" src="images/cataract-icon.png"
@@ -1220,8 +1220,47 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
             title="Glaucoma Treatment in ghatkopar, mumbai"
             alt="Glaucoma Treatment in ghatkopar, mumbai" /></span>Glaucoma Treatment</a>
     </div>
-  </div>
+  </div> -->
 
+  <div class="bot-link-bar">
+    <div class="lay-width">
+
+      <span style="margin-bottom:25px;">Quick Links:</span>
+
+      <div class="owl-carousel quick-links-carousel">
+
+        <a href="cataract-surgery-in-ghatkopar-cataract-treatment-in-ghatkopar.html">
+          <span><img src="images/cataract-icon.png" /></span>
+          Cataract Surgery
+        </a>
+
+        <a href="lasik-eye-surgery-in-ghatkopar-lasik-surgery-in-ghatkopar-lasik-in-ghatkopar.html">
+          <span><img src="images/icn0001.png" /></span>
+          LASIK Eye Surgery
+        </a>
+
+        <a href="pediatric-eye-care-clinic-in-ghatkopar-child-eye-clinic-in-ghatkopar.html">
+          <span><img src="images/icn0002.png" /></span>
+          Pediatric Eye Care
+        </a>
+
+        <a href="cornea-surgery-in-ghatkopar-cornea-specialist-in-mumbai.html">
+          <span><img src="images/icn0003.png" /></span>
+          Corneal Surgery
+        </a>
+
+        <a href="retina-specialist-in-mumbai-diabetic-retinopathy-treatment-in-ghatkopar.html">
+          <span><img src="images/icn0004.png" /></span>
+          Retina Surgery
+        </a>
+
+        <a href="glaucoma-treatment-in-ghatkopar-glaucoma-specialist-in-mumbai.html">
+          <span><img src="images/icn0005.png" /></span>
+          Glaucoma Treatment
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="footer-sec">
     <div class="lay-width">
       <div class="footer-sec-area">
@@ -1425,6 +1464,12 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
       <i class="fa fa-phone"></i>
     </a>
   </div>
+  <button id="scrollTopBtn">
+    <span class="arrow"></span>
+    <svg class="progress-ring" width="60" height="60">
+      <circle cx="30" cy="30" r="26" stroke-width="4" />
+    </svg>
+  </button>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="slider/responsiveslides.min.js" defer></script>
   <script src="assets/js/main.js"></script>
