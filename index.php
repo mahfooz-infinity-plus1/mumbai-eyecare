@@ -28,6 +28,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -1000,181 +1001,122 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
   </div>
 
   <div class="faq-sec">
-
     <div class="lay-width1 clearfix">
-
-      <h2>FAQ's </h2>
-
-      <div id="my-accordion" class="accordion styled-accordion">
-
-        <div itemscope="" itemtype="https://schema.org/FAQPage">
-
-          <div class="group open" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">I have noticed small spots floating in front of my eyes.
-                Should I get them checked with eye doctor? <span class="expand"><i
-                    class="fa fa-angle-down"></i></span><span class="collapse"><i class="fa fa-angle-up"></i></span></a>
-            </h3>
-
-            <div class="box" style="display:block;" itemscope="" itemprop="acceptedAnswer"
-              itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p><strong>Eye floaters</strong> are harmless; they are tiny pieces of the gel-like vitreous of your
-                  eyes, floating all around. However, if you notice flashing spots, then you should immediately consult
-                  an eye doctor.</p>
-
-              </div>
-
+      <h2>FAQ's</h2>
+      <div class="accordion" id="faqAccordion">
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              I have noticed small spots floating in front of my eyes. Should I get them checked with eye doctor?
+            </button>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p><strong>Eye floaters</strong> are harmless; they are tiny pieces of the gel-like vitreous of your eyes, floating all around. However, if you notice flashing spots, then you should immediately consult an eye doctor.</p>
             </div>
-
           </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">Do you need to know my medical history/medications if I am
-                only here about my eyes? <span class="expand"><i class="fa fa-angle-down"></i></span><span
-                  class="collapse"><i class="fa fa-angle-up"></i></span></a></h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>To know medical history/ medications is extremely important, as it not helps in accurate diagnosis
-                  and narrows down the treatment modalities for ideal treatment.</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">I work 8-10 hours on computer, is it harmful for my eyes?
-                <span class="expand"><i class="fa fa-angle-down"></i></span><span class="collapse"><i
-                    class="fa fa-angle-up"></i></span></a></h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>Computer monitors emit radiation lower than the maximum allowed for safety. But you should try to
-                  give rest of 5-10 minutes to your eyes to prevent them from eye strain.</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">I am a diabetic patient, do I need a regular checkup? <span
-                  class="expand"><i class="fa fa-angle-down"></i></span><span class="collapse"><i
-                    class="fa fa-angle-up"></i></span></a></h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>Diabetes is a lifestyle disease and needs lifelong management because it can lead to <a
-                    href="cataract-surgery-in-ghatkopar-cataract-treatment-in-ghatkopar.html"
-                    title="Cataract Treatment In Ghatkopar"><strong>Cataract</strong></a>, Glaucoma and diabetes
-                  retinopathy. Yes it’s advisable to visit your eye doctor twice a year.</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">Why do my eyes water all the time? What can I do to make it
-                stop? <span class="expand"><i class="fa fa-angle-down"></i></span><span class="collapse"><i
-                    class="fa fa-angle-up"></i></span></a></h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>Although it seems counter intuitive, watering is a sign of dry eye disease. When the eyes are dry a
-                  signal is sent to the brain to trigger tearing. In order to stop the eyes from tearing we need to
-                  treat the dryness.</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">Can i wear contact lenses during sports activities? <span
-                  class="expand"><i class="fa fa-angle-down"></i></span><span class="collapse"><i
-                    class="fa fa-angle-up"></i></span></a></h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>Yes, you can wear <strong>contact lens</strong> as they provide excellent vision for most sports,
-                  contact lens wearers should use polycarbonate sports safety goggles or glasses when participating in
-                  sports</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">Is my child likely to inherit my need for glasses? <span
-                  class="expand"><i class="fa fa-angle-down"></i></span><span class="collapse"><i
-                    class="fa fa-angle-up"></i></span></a></h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>It is possible, if both the biological parents wear glasses; your children are likely to need them as
-                  well.</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="group" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-            <h3 itemprop="name"><a class="control" href="#">What happens during an eye exam? <span class="expand"><i
-                    class="fa fa-angle-down"></i></span><span class="collapse"><i class="fa fa-angle-up"></i></span></a>
-            </h3>
-
-            <div class="box" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-
-              <div class="inner" itemprop="text">
-
-                <p>Remember this, you don’t visit your <strong>eye doctor</strong> just to have a pair of glasses, but
-                  he will also check your eyes for common eye diseases, assess how your eyes work together as a team and
-                  evaluate your eyes as indicators of your overall health.</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
 
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Do you need to know my medical history/medications if I am only here about my eyes?
+            </button>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>To know medical history/ medications is extremely important, as it not helps in accurate diagnosis and narrows down the treatment modalities for ideal treatment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              I work 8-10 hours on computer, is it harmful for my eyes?
+            </button>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Computer monitors emit radiation lower than the maximum allowed for safety. But you should try to give rest of 5-10 minutes to your eyes to prevent them from eye strain.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              I am a diabetic patient, do I need a regular checkup?
+            </button>
+          </h3>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Diabetes is a lifestyle disease and needs lifelong management because it can lead to <a href="cataract-surgery-in-ghatkopar-cataract-treatment-in-ghatkopar.html" title="Cataract Treatment In Ghatkopar"><strong>Cataract</strong></a>, Glaucoma and diabetes retinopathy. Yes it’s advisable to visit your eye doctor twice a year.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Why do my eyes water all the time? What can I do to make it stop?
+            </button>
+          </h3>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Although it seems counter intuitive, watering is a sign of dry eye disease. When the eyes are dry a signal is sent to the brain to trigger tearing. In order to stop the eyes from tearing we need to treat the dryness.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Can i wear contact lenses during sports activities?
+            </button>
+          </h3>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Yes, you can wear <strong>contact lens</strong> as they provide excellent vision for most sports, contact lens wearers should use polycarbonate sports safety goggles or glasses when participating in sports</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Is my child likely to inherit my need for glasses?
+            </button>
+          </h3>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>It is possible, if both the biological parents wear glasses; your children are likely to need them as well.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              What happens during an eye exam?
+            </button>
+          </h3>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Remember this, you don’t visit your <strong>eye doctor</strong> just to have a pair of glasses, but he will also check your eyes for common eye diseases, assess how your eyes work together as a team and evaluate your eyes as indicators of your overall health.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
-
   </div>
 
   <div class="lbabove">
@@ -1474,6 +1416,7 @@ In this video Dr.Jatin Ashar (Director & Chief Surgeon- Mumbai Eye Care) speaks 
   <script src="slider/responsiveslides.min.js" defer></script>
   <script src="assets/js/main.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/new-carousel.js"></script>
   <script src="js/youtube.js" defer></script>

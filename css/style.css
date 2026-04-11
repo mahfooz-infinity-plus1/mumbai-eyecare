@@ -7549,8 +7549,8 @@ span.qa {
 
 .clinic-title-row h3 span {
     display: block;
-    font-size: 14px;
-    color: #666;
+    font-size: 16px;
+    color: #007882;
     font-weight: 400;
     margin-top: 4px;
 }
@@ -7856,4 +7856,44 @@ html {
     /* circumference */
     stroke-dashoffset: 163;
     transition: stroke-dashoffset 0.2s linear;
+}
+/* --- FAQ Bootstrap Accordion Styles --- */
+.faq-sec .accordion,
+.faq-sec .accordion-item,
+.faq-sec .accordion-button {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.faq-sec .accordion-item {
+    margin-bottom: 20px;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 120, 130, 0.08) !important;
+}
+
+.faq-sec .accordion-button:not(.collapsed) {
+    color: #007882 !important;
+    background-color: #f0fafa !important;
+}
+
+.faq-sec .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 120, 130, 0.15);
+}
+
+.faq-sec .accordion-body {
+    color: #555;
+    line-height: 1.7;
+    background-color: #fff;
+    border-top: none !important; /* Removed subtle separator as requested */
+}
+
+.faq-sec .accordion-button::after {
+    background-size: 1.25rem;
+}
+
+/* FAQ Title Spacing */
+.faq-sec h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
