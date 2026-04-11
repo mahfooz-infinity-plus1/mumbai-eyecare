@@ -7857,10 +7857,12 @@ html {
     stroke-dashoffset: 163;
     transition: stroke-dashoffset 0.2s linear;
 }
+
 /* --- FAQ Bootstrap Accordion Styles --- */
 .faq-sec .accordion,
 .faq-sec .accordion-item,
 .faq-sec .accordion-button {
+    margin-top: 0;
     border: none !important;
     box-shadow: none !important;
 }
@@ -7873,6 +7875,7 @@ html {
 }
 
 .faq-sec .accordion-button:not(.collapsed) {
+    margin-top: 0;
     color: #007882 !important;
     background-color: #f0fafa !important;
 }
@@ -7885,7 +7888,8 @@ html {
     color: #555;
     line-height: 1.7;
     background-color: #fff;
-    border-top: none !important; /* Removed subtle separator as requested */
+    border-top: none !important;
+    /* Removed subtle separator as requested */
 }
 
 .faq-sec .accordion-button::after {

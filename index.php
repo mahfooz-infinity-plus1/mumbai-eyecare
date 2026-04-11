@@ -573,7 +573,7 @@
 
     <div class="lay-width1 clearfix" itemscope itemtype="http://schema.org/Physician">
 
-      <div class="drleft"> <img loading="lazy" itemprop="image" src="images/doctor-images/dr-jatin-ashar.jpeg"
+      <div class="drleft"> <img loading="lazy" itemprop="image" src="images/doctor-images/dr-jatin-ashar-home-page.jpeg"
           alt="Dr. Jatin Ashar - Eye Specialist In Ghatkopar" title="Dr. Jatin Ashar - Eye Specialist In Ghatkopar" />
       </div>
 
