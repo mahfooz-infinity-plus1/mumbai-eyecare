@@ -44,7 +44,8 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         smartSpeed: 3000,
         dots: false,
-        nav: false,
+        nav: true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
         autoplayHoverPause: true,
         responsiveClass: true,
         responsive: {
@@ -54,7 +55,7 @@ $(document).ready(function () {
             },
             600: {
                 items: 3,
-                nav: false
+                nav: true
             },
         }
     })

@@ -7901,3 +7901,32 @@ html {
     text-align: center;
     margin-bottom: 40px;
 }
+
+/* --- Doctor Carousel Nav Styles --- */
+.doctor-carousel .owl-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.doctor-carousel .owl-nav button.owl-prev,
+.doctor-carousel .owl-nav button.owl-next {
+    background: #007882 !important;
+    color: #fff !important;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    font-size: 16px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.doctor-carousel .owl-nav button.owl-prev:hover,
+.doctor-carousel .owl-nav button.owl-next:hover {
+    background: #ddde3a !important;
+    color: #000 !important;
+}
