@@ -490,6 +490,147 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Tailwind CSS & Premium Fonts Integration -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#5f6300",
+            "status-success": "#2D8A29",
+            "primary": "#007882",
+            "on-error-container": "#93000a",
+            "status-warning": "#B7A200",
+            "surface-bright": "#f9f9fc",
+            "tertiary-fixed": "#ffdcc5",
+            "on-surface": "#1a1c1e",
+            "on-primary": "#ffffff",
+            "secondary-container": "#e0e92d",
+            "inverse-on-surface": "#f0f0f3",
+            "tertiary-fixed-dim": "#ffb783",
+            "on-tertiary": "#ffffff",
+            "surface-container-low": "#f3f3f6",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#301400",
+            "surface-container-high": "#e8e8ea",
+            "surface-dim": "#dadadc",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "inverse-primary": "#7cd4df",
+            "on-background": "#1a1c1e",
+            "inverse-surface": "#2f3133",
+            "surface-container-highest": "#e2e2e5",
+            "primary-fixed-dim": "#7cd4df",
+            "surface-tint": "#006972",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e2e2e5",
+            "primary-container": "#007882",
+            "on-secondary-fixed-variant": "#474a00",
+            "outline-variant": "#bdc9ca",
+            "on-secondary-container": "#636700",
+            "outline": "#6e797a",
+            "secondary-fixed": "#e3eb31",
+            "surface": "#f9f9fc",
+            "secondary-fixed-dim": "#c7cf00",
+            "on-surface-variant": "#3e494a",
+            "surface-container": "#eeeef0",
+            "on-primary-fixed": "#001f23",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed-variant": "#6e3907",
+            "background": "#f9f9fc",
+            "tertiary-container": "#9c5d2b",
+            "on-tertiary-container": "#ffebe0",
+            "on-primary-fixed-variant": "#004f56",
+            "tertiary": "#7f4615",
+            "primary-fixed": "#98f0fc",
+            "on-primary-container": "#c4f8ff",
+            "on-secondary-fixed": "#1c1d00",
+            "status-info": "#007882",
+            "surface-blue-light": "#F0F7F8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "unit": "8px",
+            "margin-mobile": "20px",
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "container-max": "1280px"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Manrope"],
+            "body-sm": ["Inter"],
+            "headline-xl": ["Manrope"],
+            "body-lg": ["Inter"],
+            "label-caps": ["Inter"],
+            "headline-lg": ["Manrope"],
+            "headline-md": ["Manrope"],
+            "body-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS overrides to bypass Bootstrap .text-primary bright-blue defaults and enforce true MEC brand teal -->
+  <style>
+    .text-primary {
+      color: #007882 !important;
+    }
+
+    .bg-primary {
+      background-color: #007882 !important;
+    }
+
+    .border-primary {
+      border-color: #007882 !important;
+    }
+
+    a.text-primary {
+      color: #007882 !important;
+      text-decoration: none !important;
+    }
+
+    a.text-primary:hover,
+    a.text-primary:focus {
+      color: #005d65 !important;
+      text-decoration: underline !important;
+    }
+
+    .material-symbols-outlined.text-primary {
+      color: #007882 !important;
+    }
+
+    /* Fix Bootstrap collapse conflict with Tailwind utility class .collapse */
+    .collapse {
+      visibility: visible !important;
+    }
+
+    .collapse:not(.show) {
+      display: none !important;
+    }
+  </style>
 </head>
 
 
@@ -2038,1317 +2179,303 @@
 
 
 
-  <div class="inner-area">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="lay-width2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <h1 style="text-align:center;">Cornea Specialist and Eye Specialist In Ghatkopar, Mumbai</h1><br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div class="dr-sec" style="background-image:none; padding:0px 0px 54px 0px;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="lay-width1 clearfix">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="drleft"> <img src="images/doctor-images/dr-jatin-ashar.jpeg"
-              alt="Dr. Jatin Ashar - Eye Specialist in Ghatkopar, cornea specialist in mumbai"
-              title="Dr. Jatin Ashar - Eye Specialist in Ghatkopar, cornea specialist in mumbai" loading="lazy"> </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="drright">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h2 style="color:#000000;">Eye Specialist In Ghatkopar East and West</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h3>Dr. Jatin Ashar</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h4>Director and Chief Operating Surgeon
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              MD (AIIMS), DNB, FICO (UK), FAICO &amp; a fellow of L V Prasad Eye Institute
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              Cataract, Cornea and Refractive surgery specialist</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <p>Soft-spoken, compassionate and an intellectual man, Dr. Ashar trained at the prestigious 'All India
-              Institute of Medical Sciences', New Delhi; one of Asia's best! After his post-graduation, he completed
-              his
-              fellowship in Cornea and Anterior Segment from the world renowned L. V. Prasad Eye Institute. Later on, he
-              was appointed as the main cornea consultant at the 'New Tertiary Care Center' at the same institute.
-            </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <p class="dtime"><span><strong style="color:#007882;">Specialties:</strong></span> Cataract, Cornea, Lasik
-              and Refractive Surgery Specialist<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <main>
+    <!-- Hero Section -->
+    <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <!-- Portrait Image Container -->
+        <div class="rounded-xl overflow-hidden shadow-lg border border-surface-blue-light bg-white">
+          <img src="images/doctor-images/dr-jatin-ashar.jpeg"
+            alt="Dr. Jatin Ashar - Eye Specialist in Ghatkopar, cornea specialist in mumbai"
+            title="Dr. Jatin Ashar - Eye Specialist in Ghatkopar, cornea specialist in mumbai"
+            class="w-full h-auto object-cover" loading="lazy" />
+        </div>
+        <!-- Doctor Info Content -->
+        <div class="flex flex-col gap-6">
+          <div>
+            <h1
+              class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-2">
+              Dr. Jatin Ashar</h1>
+            <h2 class="font-headline-md text-headline-md text-on-surface-variant">Director &amp; Chief Operating Surgeon
+            </h2>
+            <p class="font-body-lg text-body-lg text-outline mt-2">MD (AIIMS), DNB, FICO (UK), FAICO &amp; a fellow of L
+              V Prasad Eye Institute</p>
+            <p class="font-body-md text-body-md text-primary font-semibold mt-1">Cataract, Cornea and Refractive surgery
+              specialist</p>
           </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Soft-spoken, compassionate and an intellectual man, Dr. Ashar trained at the prestigious 'All India
+            Institute of Medical Sciences', New Delhi; one of Asia's best! After his post-graduation, he completed his
+            fellowship in Cornea and Anterior Segment from the world renowned L. V. Prasad Eye Institute. Later on, he
+            was appointed as the main cornea consultant at the 'New Tertiary Care Center' at the same institute.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            <strong class="text-primary font-semibold">Specialties:</strong> Cataract, Cornea, Lasik and Refractive
+            Surgery Specialist
+          </p>
+          <!-- Experience stats grid -->
+          <div class="grid grid-cols-3 gap-4 mt-6">
+            <div class="bg-surface-bright p-4 rounded-lg border border-surface-variant text-center shadow-sm">
+              <span class="material-symbols-outlined text-primary text-4xl mb-2"
+                style="font-variation-settings: 'FILL' 1;">work_history</span>
+              <h3 class="font-headline-md text-headline-md text-primary">18+</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Years Experience</p>
+            </div>
+            <div class="bg-surface-bright p-4 rounded-lg border border-surface-variant text-center shadow-sm">
+              <span class="material-symbols-outlined text-status-success text-4xl mb-2"
+                style="font-variation-settings: 'FILL' 1;">verified</span>
+              <h3 class="font-headline-md text-headline-md text-status-success">99%</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Success Rate</p>
+            </div>
+            <div class="bg-surface-bright p-4 rounded-lg border border-surface-variant text-center shadow-sm">
+              <span class="material-symbols-outlined text-primary text-4xl mb-2"
+                style="font-variation-settings: 'FILL' 1;">sentiment_satisfied</span>
+              <h3 class="font-headline-md text-headline-md text-primary">99%</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Happy Patients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Main Content Area -->
+    <section class="bg-surface-container-low py-12 md:py-24">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-16">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- About the Doctor -->
+        <div class="bg-white p-8 md:p-12 rounded-2xl border border-surface-blue-light shadow-sm">
+          <h2
+            class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-6 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">person</span> About the Doctor
+          </h2>
+          <div class="font-body-md text-body-md text-on-surface space-y-4 leading-relaxed">
+            <p>Remarkable sensitivity to patients' needs and providing the warmth of compassionate healing makes us
+              stand apart. Technology is mandatory for high standards of care and Mumbai Eye Care understands that. We
+              use only the latest technology and best in the class equipment throughout the hospital.</p>
+            <p>His areas of expertise are Lamellar Keratoplasty, Pediatric Keratoplasties and <strong><a
+                  href="lasik-eye-surgery-in-ghatkopar-lasik-surgery-in-ghatkopar-lasik-in-ghatkopar.html"
+                  title="Lasik Eye Surgery In Ghatkopar" class="text-primary hover:underline font-semibold">Laser LASIK
+                  Surgery</a></strong>. He has gifted sight to many who could not see due to corneal pathologies by
+              performing Corneal Transplantation.</p>
+            <p>His knowledge and proficiency has positioned MEC amongst the '<strong>Best Eye Care Centres</strong>'
+              providing quality eye care with new technology, latest surgical techniques and most advanced machines
+              catering to variety of eye diseases under one roof.</p>
+          </div>
         </div>
 
+        <!-- Areas of Expertise -->
+        <div>
+          <h2
+            class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-6 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">visibility</span> Areas of Expertise
+          </h2>
 
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+            <!-- Card 1: Cataract Surgery -->
+            <div
+              class="bg-white p-6 rounded-xl border border-surface-blue-light shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="material-symbols-outlined text-primary">visibility</span>
+                  <h3 class="font-headline-md text-headline-md text-primary">Cataract Surgery</h3>
+                </div>
+                <div class="text-body-sm text-on-surface-variant space-y-3 leading-relaxed">
+                  <p><strong>Dr. Jatin</strong> is one of the best eye doctors &amp; <strong>eye surgeons in
+                      Ghatkopar</strong>, Mumbai area. He has expertise in performing complex cataract surgeries and
+                    also in phacoemulsification and bladeless cataract surgeries.</p>
+                  <p>He has a vast experience in using multifocal lenses such as trifocal and bifocal lenses and also
+                    performed cataract surgeries in children at Mumbai eye care hospital in Ghatkopar.</p>
+                </div>
+              </div>
+            </div>
 
+            <!-- Card 2: Cornea Transplant -->
+            <div
+              class="bg-white p-6 rounded-xl border border-surface-blue-light shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="material-symbols-outlined text-primary">layers</span>
+                  <h3 class="font-headline-md text-headline-md text-primary">Cornea Transplant</h3>
+                </div>
+                <div class="text-body-sm text-on-surface-variant space-y-3 leading-relaxed">
+                  <p><strong>Dr. Jatin</strong> specializes in cornea transplant surgeries and he has performed a very
+                    high number of cornea surgeries such as full-thickness cornea surgery or penetrating keratoplasty,
+                    layer by layer cornea transplants such as Deep anterior lamellar keratoplasty (DALK) and the latest
+                    type of cornea surgery that is sutureless cornea transplant or Descemet's membrane endothelial
+                    keratoplasty (DMEK) and launched state of the art eye clinic for <strong>cornea surgeries in
+                      Ghatkopar</strong>.</p>
+                  <p>He also trains other doctors from India and abroad in performing cornea transplant surgeries and
+                    also has a very high success rate of <strong><a
+                        href="cornea-surgery-in-ghatkopar-cornea-specialist-in-mumbai.html"
+                        title="cornea transplant surgery in mumbai"
+                        class="text-primary hover:underline font-semibold">cornea transplant surgery</a></strong>.</p>
+                  <p><strong>Dr. Jatin</strong> is a medical director of an eye bank at Thane and an <strong>eye clinic
+                      at Ghatkopar</strong> and he is among the top cornea eye surgeon doctors in India.</p>
+                </div>
+              </div>
+            </div>
 
+            <!-- Card 3: LASIK & Refractive -->
+            <div
+              class="bg-white p-6 rounded-xl border border-surface-blue-light shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="material-symbols-outlined text-primary">flare</span>
+                  <h3 class="font-headline-md text-headline-md text-primary">LASIK &amp; Refractive</h3>
+                </div>
+                <div class="text-body-sm text-on-surface-variant space-y-3 leading-relaxed">
+                  <p><strong>Dr. Jatin</strong> performed many laser vision correction surgeries for spectacle/ glass
+                    number removal such as LASIK, LASEK, PRK, PTK, SMILE and also launched a state of the art eye
+                    hospital for <strong>LASIK in Ghatkopar</strong>. His patients say that he is among the best eye
+                    doctor for LASIK.</p>
+                  <p>For patients who cannot undergo <strong>LASIK</strong>, he also is an expert at performing ICL,
+                    IPCL surgery.</p>
+                </div>
+              </div>
+            </div>
 
+          </div>
+        </div>
 
-
-
-
-
-
-
-
+        <!-- Awards & Achievements -->
+        <div>
+          <h2
+            class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-6 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">emoji_events</span> Awards &amp; Achievements
+          </h2>
+          <div class="bg-white p-6 md:p-8 rounded-2xl border border-surface-blue-light shadow-sm">
+            <p class="font-body-lg text-body-lg text-on-surface mb-6 font-semibold"><strong>Dr. Ashar</strong> has many
+              feathers in his cap; to list a few –</p>
+            <ul class="space-y-4 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Youngest Indian surgeon to be invited at the 'American
+                  Academy of Ophthalmology'</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Credited with numerous awards, invited faculty at most
+                  conferences</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Publications in international journals and conferences</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Performed numerous complex cataract surgeries</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Execute corneal transplants even in infants as young as 1
+                  month old</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Carry-Out many refractive surgeries such as LASIK, PRK, and
+                  ICL</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Among top few surgeons trained in performing 'Lamellar
+                  Keratoplasties'</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Received 'Achievement Award' from American Academy of
+                  Ophthalmology</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary mt-1"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">'International Ophthalmologists Education Award' from
+                  American Academy of Ophthalmology</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="dr-sec-b">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div class="lay-width1 clearfix">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <li> <i><img src="images/exp-icn.png" alt="18+ Years Of Experience" title="18+ Years Of Experience"
-                loading="lazy"></i>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h4>18+ Years</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h5>Of Experience</h5>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <li> <i><img src="images/success-icn.png" alt="99% Success Rate" title="99% Success Rate" loading="lazy"></i>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h4>99%</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h5>Success Rate</h5>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <li> <i><img src="images/happy-icn.png" alt="99% Happy Patients" title="99% Happy Patients"
-                loading="lazy"></i>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h4>99%</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h5>Happy Patients</h5>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
+
+    <!-- Weekly Time Table Section -->
+    <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16">
+      <div class="mb-8 text-center md:text-left">
+        <h2
+          class="font-headline-xl text-headline-xl text-primary font-bold pb-2 border-b-2 border-primary inline-block">
+          Weekly Time Table</h2>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="lay-width2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>Remarkable sensitivity to patients' needs and providing the warmth of compassionate healing makes us stand
-        apart. Technology is mandatory for high standards of care and Mumbai Eye Care understands that. We use only the
-        latest technology and best in the class equipment throughout the hospital.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>His areas of expertise are Lamellar Keratoplasty, Pediatric Keratoplasties and <strong><a
-            href="lasik-eye-surgery-in-ghatkopar-lasik-surgery-in-ghatkopar-lasik-in-ghatkopar.html"
-            title="Lasik Eye Surgery In Ghatkopar">Laser LASIK Surgery</a></strong>. He has gifted sight to many who
-        could not see due to corneal pathologies by performing Corneal Transplantation.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>His knowledge and proficiency has positioned MEC amongst the '<strong>Best Eye Care Centres</strong>'
-        providing
-        quality eye care with new technology, latest surgical techniques and most advanced machines catering to variety
-        of eye diseases under one roof.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <h3>Areas of expertise:</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p><strong>Dr. Jatin</strong> is one of the best eye doctors & <strong>eye surgeons in Ghatkopar</strong>, Mumbai
-        area. He has expertise in performing complex cataract surgeries and also in phacoemulsification and bladeless
-        cataract surgeries.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>He has a vast experience in using multifocal lenses such as trifocal and bifocal lenses and also performed
-        cataract surgeries in children at Mumbai eye care hospital in Ghatkopar.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>Dr. Jatin specializes in cornea transplant surgeries and he has performed a very high number of cornea
-        surgeries such as full-thickness cornea surgery or penetrating keratoplasty, layer by layer cornea transplants
-        such as Deep anterior lamellar keratoplasty (DALK) and the latest type of cornea surgery that is sutureless
-        cornea transplant or Descemet's membrane endothelial keratoplasty (DMEK) and launched state of the art eye
-        clinic for <strong>cornea surgeries in Ghatkopar</strong>.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>He also trains other doctors from India and abroad in performing cornea transplant surgeries and also has a
-        very high success rate of <strong><a href="cornea-surgery-in-ghatkopar-cornea-specialist-in-mumbai.html"
-            title="cornea transplant surgery in mumbai">cornea transplant surgery</a></strong>.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>Dr. Jatin is a medical director of an eye bank at Thane and an <strong>eye clinic at Ghatkopar</strong> and he
-        is among the top cornea eye surgeon doctors in India.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>Dr. Jatin performed many laser vision correction surgeries for spectacle/ glass number removal such as LASIK,
-        LASEK, PRK, PTK, SMILE and also launched a state of the art eye hospital for <strong>LASIK in
-          Ghatkopar</strong>. His patients say that he is among the best eye doctor for LASIK.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p>For patients who cannot undergo <strong>LASIK</strong>, he also is an expert at performing ICL, IPCL surgery.
-      </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <h3>Awards and Achievements:</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p><strong>Dr. Ashar</strong> has many feathers in his cap; to list a few â€“</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <ul class="list01">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Youngest Indian surgeon to be invited at the 'American Academy of Ophthalmology'</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Credited with numerous awards, invited faculty at most conferences</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Publications in international journals and conferences,</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Performed numerous complex cataract surgeries,</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Execute corneal transplants even in infants as young as 1 month old,</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Carry-Out many refractive surgeries such as LASIK, PRK, and ICL,</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Among top few surgeons trained in performing 'Lamellar Keratoplasties',</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>Received 'Achievement Award' from American Academy of Ophthalmology,</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <li>'International Ophthalmologists Education Award' from American Academy of Ophthalmology</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="overflow-x-auto border-t-2 border-primary pt-2">
+        <table class="w-full border-collapse border border-surface-variant text-left shadow-sm">
+          <thead>
+            <tr class="bg-surface-container-high border-b border-surface-variant">
+              <th class="p-4 border-r border-surface-variant font-headline-md text-primary font-bold">Day</th>
+              <th class="p-4 border-r border-surface-variant font-headline-md text-primary font-bold text-center">
+                Ghatkopar West</th>
+              <th class="p-4 border-r border-surface-variant font-headline-md text-primary font-bold text-center">
+                Ghatkopar East</th>
+              <th class="p-4 border-b border-surface-variant font-headline-md text-primary font-bold text-center">
+                Chembur</th>
+            </tr>
+          </thead>
+          <tbody class="font-body-md text-on-surface bg-white">
+            <tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+              <td class="p-4 border-r border-surface-variant font-semibold">Monday</td>
+              <td class="p-4 border-r border-surface-variant text-center">9:00 AM – 10:15 AM</td>
+              <td class="p-4 border-r border-surface-variant text-center bg-surface-bright">10:30 AM – 4:30 PM</td>
+              <td class="p-4 text-center">5:00 PM – 7:00 PM</td>
+            </tr>
+            <tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+              <td class="p-4 border-r border-surface-variant font-semibold">Tuesday</td>
+              <td class="p-4 border-r border-surface-variant text-center text-outline">—</td>
+              <td class="p-4 border-r border-surface-variant text-center bg-surface-bright">10:30 AM – 4:30 PM</td>
+              <td class="p-4 text-center">5:00 PM – 7:00 PM</td>
+            </tr>
+            <tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+              <td class="p-4 border-r border-surface-variant font-semibold">Wednesday</td>
+              <td class="p-4 border-r border-surface-variant text-center">9:00 AM – 10:15 AM</td>
+              <td class="p-4 border-r border-surface-variant text-center bg-surface-bright">10:30 AM – 4:30 PM</td>
+              <td class="p-4 text-center">5:00 PM – 7:00 PM</td>
+            </tr>
+            <tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+              <td class="p-4 border-r border-surface-variant font-semibold">Thursday</td>
+              <td class="p-4 border-r border-surface-variant text-center text-outline">—</td>
+              <td class="p-4 border-r border-surface-variant text-center bg-surface-bright">10:30 AM – 4:30 PM</td>
+              <td class="p-4 text-center">5:00 PM – 7:00 PM</td>
+            </tr>
+            <tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+              <td class="p-4 border-r border-surface-variant font-semibold">Friday</td>
+              <td class="p-4 border-r border-surface-variant text-center">9:00 AM – 10:15 AM</td>
+              <td class="p-4 border-r border-surface-variant text-center bg-surface-bright">10:30 AM – 4:30 PM</td>
+              <td class="p-4 text-center">5:00 PM – 7:00 PM</td>
+            </tr>
+            <tr class="hover:bg-surface-bright transition-colors">
+              <td class="p-4 border-r border-surface-variant font-semibold">Saturday</td>
+              <td class="p-4 border-r border-surface-variant text-center text-outline">—</td>
+              <td class="p-4 border-r border-surface-variant text-center bg-surface-bright">10:30 AM – 4:30 PM</td>
+              <td class="p-4 text-center">5:00 PM – 7:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-8 text-center flex flex-col items-center justify-center gap-4">
+        <a href="eye-clinic-in-ghatkopar-eye-clinic-in-ghatkopar-east-eye-clinic-in-ghatkopar-west.html"
+          class="inline-flex items-center justify-center gap-2 bg-[#D7DF21] text-black font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all shadow-sm transform hover:-translate-y-0.5">
+          <span class="material-symbols-outlined">event_available</span> Book Appointment
+        </a>
+      </div>
+    </section>
+
+  </main>
   <div class="faq-sec">
     <div class="lay-width1 clearfix">
       <h2>FAQ's </h2>
